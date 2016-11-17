@@ -1,0 +1,58 @@
+
+<html>
+<head>
+<script language="JavaScript"> 
+<!-- 
+function alt( msg, _width, _height ){
+    var _style = alt_div.style;
+    if( msg != null ){
+        alt_div.innerHTML = msg;
+        _style.visibility = "visible";
+        if( _width != null ){
+            if( alt_div.offsetWidth > _width ){
+                _style.width = _width;
+            }
+        }
+        if( _height != null ){
+            if( alt_div.offsetHeight > _height ){
+                _style.height = _height;
+            }
+        }
+    }else{
+        _style.visibility = "hidden";
+    }
+}
+
+document.write(
+    "<div id=alt_div style=\"" +
+    "padding:2;" +
+    "border:1 solid #FF7200;" + // 말풍선 테두리 컬러
+    "background-color:#F7F7F7;color:#000;" + // 말풍선 테이블 백그라운드컬러 / 폰트컬러
+    "position:absolute;" +
+    "visibility:hidden;" +
+    "overflow:hidden;" +
+    "z-index:auto;" +
+    "width:auto;" +
+    "height:auto;" +
+    "filter:alpha(opacity=60);" + // 투명도
+    "\"></div>"
+);
+
+document.onmousemove = get_xy;
+function get_xy(){
+    var _style = alt_div.style;
+    var x = event.x + document.body.scrollLeft; 
+    var y = event.y + document.body.scrollTop;
+    _style.left = x + 10;
+    _style.top = y + 10;
+}
+//--> 
+</script>
+</head>
+
+<body>
+<a href=# onmouseover="alt( '테스트용 말풍선 입니다.<br>말풍선이 생겼나요?<p>생겼으면 말해주세요.' )" onmouseout="alt()">마우스 올려봐요.</a><p>
+레이어에 투명도를 주었군요.ㅎㅎ
+</body>
+
+</html>
