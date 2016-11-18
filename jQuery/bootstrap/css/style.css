@@ -1,0 +1,35 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.contenttbl {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.contenttbl td, .contenttbl th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.contenttbl tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+.contenttbl tr:hover {
+  background-color: #ddd;
+}
+.contenttbl th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+}
+.contenttbl{
+  text-align: left;
+}
+.contenttbl td:nth-child(1){width:40%;min-width:200px;}
+.contenttbl td:nth-child(2){width:60%;min-width:300px;}
+/*.contenttbl td:nth-child(3){width:40%;min-width:200px;}*/

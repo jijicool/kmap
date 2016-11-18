@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/css/style.css">
+  <script src="http://www.w3schools.com/lib/w3data.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div w3-include-html="nav.html" class="container"></div>
+  </nav>
+  <div class="container">
+    <div class="starter-template">
+      <div w3-include-html="nodecontrol.html"></div>
+      <div w3-include-html="stylecontrol.html"></div>
+      <div w3-include-html="attrcontrol.html"></div>
+      <div w3-include-html="eventcontrol.html"></div>
+      <div w3-include-html="sizecontrol.html"></div>
+      <div w3-include-html="animatecontrol.html"></div>
+    </div>
+  </div><!-- /.container -->
+  <script>
+  w3IncludeHTML();
+  </script>
+  <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
