@@ -1,0 +1,158 @@
+<h1>위치 및 크기 다루기</h1>
+<table class="contenttbl">
+  <tr>
+    <th>요소의 위치 및 크기 관련 기능</th>
+  </tr>
+  <tr>
+    <td><strong>핵심내용</strong></td>
+    <td><strong>핵심프로퍼티 및 메서드</strong></td>
+  </tr>
+  <tr>
+    <td>부모 좌표 노드 구하기</td>
+    <td>$대상.offsetParent()</td>
+  </tr>
+  <tr>
+    <td>지역 좌표 위치 구하기</td>
+    <td><p>$대상.position().left</p><p>$대상.position().top</p></td>
+  </tr>
+  <tr>
+    <td>지역 좌표 위치 설정하기</td>
+    <td><p>$대상.css("left", 위치값) $대상.css("top", 위치값)</p><p>$대상.css({left:위치값, top:위치값})</p></td>
+  </tr>
+  <tr>
+    <td>전역 좌표 위치 구하기</td>
+    <td><p>$대상.offset().left</p><p>$대상.offset().top</p></td>
+  </tr>
+  <tr>
+    <td>요소 크기 구하기(기본 크기)</td>
+    <td><p>$대상.width()</p><p>$대상.height()</p></td>
+  </tr>
+  <tr>
+    <td>요소 크기 구하기(기본 크기+padding 크기)</td>
+    <td><p>$대상.innerWidth()</p><p>$대상.innerHeight()</p></td>
+  </tr>
+  <tr>
+    <td>요소 크기 구하기(기본 크기+padding+border 크기)</td>
+    <td><p>$대상.outerWidth()</p><p>$대상.outerHeight()</p></td>
+  </tr>
+  <tr>
+    <td>요소 크기 구하기(기본 크기+padding+border+margin 크기)</td>
+    <td><p>$대상.outerWidth(true)</p><p>$대상.outerHeight(true)</p></td>
+  </tr>
+  <tr>
+    <td>요소 크기 설정하기(기본 크기)</td>
+    <td><p>$대상.width(크기값)</p><p>$대상.height(크기값)</p></td>
+  </tr>
+  <tr>
+    <td>요소 크기 설정하기(기본 크기+padding 크기)</td>
+    <td><p>$대상.innerWidth(크기값)</p><p>$대상.innerHeight(크기값)</p></td>
+  </tr>
+  <tr>
+    <td>요소 스크롤 위치 구하기</td>
+    <td><p>$대상.scrollLeft()</p><p>$대상.scrollTop()</p></td>
+  </tr>
+  <tr>
+    <td>요소 스크롤 위치 설정하기</td>
+    <td><p>$대상.scrollLeft(위치값)</p><p>$대상.scrollTop(위치값)</p></td>
+  </tr>
+</table>
+<table class="contenttbl">
+  <tr>
+    <th>문서의 위치 및 크기 관련 기능</th>
+  </tr>
+  <tr>
+    <td><strong>핵심내용</strong></td>
+    <td><strong>핵심프로퍼티 및 메서드</strong></td>
+  </tr>
+  <tr>
+    <td>문서 크기 구하기</td>
+    <td><p>$(document).width()</p><p>$(document).height()</p></td>
+  </tr>
+</table>
+<table class="contenttbl">
+  <tr>
+    <th>화면의 위치 및 크기 관련 기능</th>
+  </tr>
+  <tr>
+    <td><strong>핵심내용</strong></td>
+    <td><strong>핵심프로퍼티 및 메서드</strong></td>
+  </tr>
+  <tr>
+    <td>전체 화면 크기 구하기</td>
+    <td><p>screen.width</p><p>screen.height</p></td>
+  </tr>
+  <tr>
+    <td>유효한 전체 화면 크기 구하기</td>
+    <td><p>screen.availWidth</p><p>screen.availHeight</p></td>
+  </tr>
+</table>
+<table class="contenttbl">
+  <tr>
+    <th>윈도우의 위치 및 크기 관련 기능</th>
+  </tr>
+  <tr>
+    <td><strong>핵심내용</strong></td>
+    <td><strong>핵심프로퍼티 및 메서드</strong></td>
+  </tr>
+  <tr>
+    <td>윈도우 크기 구하기(기본 크기)</td>
+    <td><p>window.innerWidth</p><p>window.innerHeight</p></td>
+  </tr>
+  <tr>
+    <td>윈도우 크기 구하기(기본 크기+메뉴바+툴바 영역 포함)</td>
+    <td><p>$(window).width()</p><p>$(window).height()</p></td>
+  </tr>
+  <tr>
+    <td>윈도우 크기 구하기(기본 크기+메뉴바+툴바+스크롤바 영역 포함)</td>
+    <td><p>window.outerWidth</p><p>window.outerHeight</p></td>
+  </tr>
+  <tr>
+    <td>윈도우 크기 설정하기</td>
+    <td>window.resizeTo(width, height)</td>
+  </tr>
+  <tr>
+    <td>윈도우 변경 이벤트 처리</td>
+    <td>$(window).on("resize", function(){})</td>
+  </tr>
+  <tr>
+    <td>윈도우 위치값 구하기</td>
+    <td><p>window.screenLeft</p><p>window.screenTop</p></td>
+  </tr>
+  <tr>
+    <td>윈도우 위치값 설정하기</td>
+    <td><p>window.moveTo(dx,dy)</p><p>window.moveBy(dx,dy)</p></td>
+  </tr>
+  <tr>
+    <td>윈도우 스크롤 위치 값 구하기</td>
+    <td><p>window.pageXOffset</p><p>window.pageYOffset</p></td>
+  </tr>
+  <tr>
+    <td>윈도우 스크롤 위치 값 설정하기</td>
+    <td><p>window.scrollTo(x,y)</p><p>window.scrollBy(x,y)</p></td>
+  </tr>
+  <tr>
+    <td>윈도우 스크롤 이벤트 처리하기</td>
+    <td>$(window).on("scroll",function(){})</td>
+  </tr>
+</table>
+<table class="contenttbl">
+  <tr>
+    <th>마우스의 위치 및 크기 관련 기능</th>
+  </tr>
+  <tr>
+    <td><strong>핵심내용</strong></td>
+    <td><strong>핵심프로퍼티 및 메서드</strong></td>
+  </tr>
+  <tr>
+    <td>클릭한 전역 위치(윈도우 영역을 기준)</td>
+    <td><p>mouseEvent.clientX</p><p>mouseEvent.clientY</p></td>
+  </tr>
+  <tr>
+    <td>클릭한 전역 위치(문서 영역을 기준)</td>
+    <td><p>mouseEvent.pageX</p><p>mouseEvent.pageY</p></td>
+  </tr>
+  <tr>
+    <td>클릭한 지역 위치</td>
+    <td><p>var offsetX = mouseEvent.pageX - $(타깃).offset().left</p><p>var offsetY = mouseEvent.pageY - $(타깃).offset().top</p></td>
+  </tr>
+</table>
