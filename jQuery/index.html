@@ -7,14 +7,19 @@
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="bootstrap/css/style.css">
   <script src="http://www.w3schools.com/lib/w3data.js"></script>
-  <title>Document</title>
+  <!-- <script src="./js/jquery-3.1.1.js"></script> -->
+  <title>jQuery Basic</title>
 </head>
 <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div w3-include-html="nav.html" class="container"></div>
   </nav>
+
+
   <div class="container">
     <div class="starter-template">
+      <!-- <div w3-include-html="www.google.com"></div> -->
+      <button class="btn hiddenbtn"><span class="glyphicon glyphicon-folder-close"></span></button>
       <div w3-include-html="nodecontrol.html"></div>
       <div w3-include-html="stylecontrol.html"></div>
       <div w3-include-html="attrcontrol.html"></div>
@@ -26,9 +31,24 @@
   <script>
   w3IncludeHTML();
   </script>
+
   <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
   <script src="js/bootstrap.min.js"></script>
+  <script>
+    var $hbtn = $(".hiddenbtn");
+    var glyClose = "glyphicon glyphicon-folder-close";
+    var glyOpen = "glyphicon glyphicon-folder-open";
+    $hbtn.click(function(){
+      if($hbtn.children().attr("class") == glyClose){
+        $hbtn.children().removeClass(glyClose).addClass(glyOpen);
+        $hbtn.next().next().css("border", "5px solid #000"));
+        // $hbtn.next().addClass("close-contents");
+      }else{$hbtn.children().removeClass(glyOpen).addClass(glyClose);
+        $hbtn.next().removeClass("close-contents");
+      }
+    })
+  </script>
 </body>
 </html>
