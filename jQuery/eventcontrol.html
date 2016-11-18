@@ -1,0 +1,38 @@
+<h1>이벤트 다루기</h1>
+<table class="contenttbl">
+  <tr>
+    <th>이벤트 다루기</th>
+  </tr>
+  <tr>
+    <td><strong>핵심내용</strong></td>
+    <td><strong>핵심프로퍼티 및 메서드</strong></td>
+  </tr>
+  <tr>
+    <td>일반 이벤트 등록</td>
+    <td>$대상.on("이벤트이름", 이벤트리스너)</td>
+  </tr>
+  <tr>
+    <td>단축 이벤트 등록</td>
+    <td>$대상.단축이벤트(이벤트리스터)</td>
+  </tr>
+  <tr>
+    <td>등록한 이벤트 제거</td>
+    <td><p>$대상.off("click", 삭제하고 싶은 이벤트리스너명)</p><p>$대상.off("click")</p><p>$대상.off()</p></td>
+  </tr>
+  <tr>
+    <td>이벤트 한번만 실행</td>
+    <td>$대상.one(이벤트이름, 이벤트리스너)</td>
+  </tr>
+  <tr>
+    <td>기본 행동 취소</td>
+    <td>이벤트객체.preventDefault()</td>
+  </tr>
+  <tr>
+    <td>버블링 멈추기</td>
+    <td>이벤트객체.stopPropagation()</td>
+  </tr>
+  <tr>
+    <td>버블링 활용: 하나의 이벤트</td>
+    <td>$대상.on("이벤트이름", "선택자", 이벤트리스너)</td>
+  </tr>
+</table>
