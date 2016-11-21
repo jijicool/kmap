@@ -1,12 +1,22 @@
 body {
-  padding-top: 30px;
+  position: relative;
 }
+
+#navcon{
+  min-width:600px;
+}
+#navbox ul li a{
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .close-contents{
   display:none;
 }
 .starter-template {
   padding: 20px 15px;
   text-align: center;
+  min-width: 600px;
 }
 .contenttbl {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -28,12 +38,14 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #000;
+    background-color: #333;
     color: white;
 }
 .contenttbl{
   text-align: left;
 }
-.contenttbl td:nth-child(1){width:40%;min-width:200px;}
-.contenttbl td:nth-child(2){width:60%;min-width:300px;}
+.contenttbl tr th:nth-child(1){width:40%;min-width:200px;}
+.contenttbl tr th:nth-child(2){width:60%;min-width:300px;}
+.contenttbl tr td:nth-child(1){width:40%;min-width:200px;}
+.contenttbl tr td:nth-child(2){width:60%;min-width:300px;}
 /*.contenttbl td:nth-child(3){width:40%;min-width:200px;}*/

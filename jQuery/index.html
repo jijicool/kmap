@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.css">
   <link rel="stylesheet" href="./bootstrap/css/style.css">
   <!-- w3-include-html -->
   <script src="http://www.w3schools.com/lib/w3data.js"></script>
@@ -13,55 +14,61 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <title>jQuery Basic</title>
 </head>
-<body>
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div w3-include-html="nav.html" class="container"></div>
+<body data-spy="scroll" data-target=".starter-template">
+  <nav id="navcontainer" class="navbar navbar-default">
+    <div id="navcon" class="row" w3-include-html="nav.html"></div>
   </nav>
 
   <div class="container-fluid">
     <div class="starter-template">
       <!-- <div w3-include-html="www.google.com"></div> -->
-      <div class="thumbnail">
-        <div class="form-group row">
+      <div class="panel panel-info" id="nodecontrol">
+        <div class="panel-heading">
           <label for="nodecon"><h1>노드 다루기</h1></label>
-          <button type="button" class="btn btn-default hiddenbtn"  id="nodecon">close</button>
+          <button type="button" class="btn btn-default hiddenbtn" id="nodecon">close</button>
+          <button type="button" class="btn btn-default topbtn">Top</button>
         </div>
-        <div w3-include-html="nodecontrol.html"></div>
+        <div class="panel-body" w3-include-html="nodecontrol.html"></div>
       </div>
-      <div class="thumbnail">
-        <div class="form-group row">
+      <div class="panel panel-success" id="stylecontrol">
+        <div class="panel-heading">
           <label for="stylecon"><h1>스타일 다루기</h1></label>
-          <button type="button" class="btn btn-default hiddenbtn"  id="stylecon">close</button>
+          <button type="button" class="btn btn-default hiddenbtn" id="stylecon">close</button>
+          <button type="button" class="btn btn-default topbtn">Top</button>
         </div>
-        <div w3-include-html="stylecontrol.html"></div>
+        <div class="panel-body" w3-include-html="stylecontrol.html"></div>
       </div>
-      <div class="thumbnail">
-        <div class="form-group row">
+      <div class="panel panel-info" id="attrcontrol">
+        <div class="panel-heading">
           <label for="attrcon"><h1>속성 다루기</h1></label>
-          <button type="button" class="btn btn-default hiddenbtn"  id="attrcon">close</button>
+          <button type="button" class="btn btn-default hiddenbtn" id="attrcon">close</button>
+          <button type="button" class="btn btn-default topbtn">Top</button>
         </div>
-        <div w3-include-html="attrcontrol.html"></div>
+        <div class="panel-body" w3-include-html="attrcontrol.html"></div>
       </div>
-      <div class="thumbnail">
-        <div class="form-group row">
+      <div class="panel panel-success" id="eventcontrol">
+        <div class="panel-heading">
           <label for="eventcon"><h1>이벤트 다루기</h1></label>
-          <button type="button" class="btn btn-default hiddenbtn"  id="eventcon">close</button>
+          <button type="button" class="btn btn-default hiddenbtn" id="eventcon">close</button>
+          <button type="button" class="btn btn-default topbtn">Top</button>
         </div>
-        <div w3-include-html="eventcontrol.html"></div>
+        <div class="panel-body" w3-include-html="eventcontrol.html"></div>
       </div>
-      <div class="thumbnail">
-        <div class="form-group row">
+      <div class="panel panel-info" id="sizecontrol">
+        <div class="panel-heading">
           <label for="sizecon"><h1>위치 및 크기 다루기</h1></label>
-          <button type="button" class="btn btn-default hiddenbtn"  id="sizecon">close</button>
+          <button type="button" class="btn btn-default hiddenbtn" id="sizecon">close</button>
+          <button type="button" class="btn btn-default topbtn">Top</button>
         </div>
-        <div w3-include-html="sizecontrol.html"></div>
+        <div class="panel-body" w3-include-html="sizecontrol.html"></div>
       </div>
-      <div class="thumbnail">
-        <div class="form-group row">
+      <div class="panel panel-success" id="animatecontrol">
+        <div class="panel-heading">
           <label for="animatecon"><h1>에니메이션 효과 다루기</h1></label>
-          <button type="button" class="btn btn-default hiddenbtn"  id="animatecon">close</button>
+          <button type="button" class="btn btn-default hiddenbtn" id="animatecon">close</button>
+          <button type="button" class="btn btn-default topbtn">Top</button>
         </div>
-        <div w3-include-html="animatecontrol.html"></div>
+        <div class="panel-body" w3-include-html="animatecontrol.html"></div>
       </div>
     </div>
   </div><!-- /.container -->
