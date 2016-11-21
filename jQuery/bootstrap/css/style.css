@@ -12,6 +12,7 @@ body {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    margin-top: 10px;
 }
 .contenttbl td, .contenttbl th {
     border: 1px solid #ddd;
@@ -27,7 +28,7 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #f099bb;
+    background-color: #000;
     color: white;
 }
 .contenttbl{
